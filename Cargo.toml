@@ -2,7 +2,14 @@
 name = "myfetch"
 version = "0.1.0"
 edition = "2021"
-
+authors = ["Anup"]
+license = "MIT"
+description = "A tool to get your system information"
+readme = "README.md"
+homepage = "https://github.com/pandeyanup/myfetch"
+repository = "https://github.com/pandeyanup/myfetch"
+keywords = ["cli", "system", "fetch"]
+categories = ["command-line-utilities"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
