@@ -49,7 +49,7 @@ fn main() {
             print!("\x1B[1A");
         }
 
-        // Sleep for a while
+        // Sleep for a while to refresh the data
         thread::sleep(time::Duration::from_millis(500));
     }
 }
