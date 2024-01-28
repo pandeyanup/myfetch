@@ -15,3 +15,9 @@ categories = ["command-line-utilities"]
 [dependencies]
 colored = "2.1.0"
 sysinfo = "0.30.5"
+
+[profile.release]
+codegen-units = 1 # Compile crates one after another so the compiler can optimize better
+lto = true # Enables link to optimizations
+opt-level = "s" # Optimize for binary size
+strip = true  # Automatically strip symbols from the binary.
