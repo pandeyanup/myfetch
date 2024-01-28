@@ -33,15 +33,15 @@ fn main() {
         // Print RAM information on new line
         println!(
             "RAM: {}/{} GB",
+            format!("{:.2}", sys.used_memory() as f64 / 1024.0 / 1024.0 / 1024.0)
+                .bold()
+                .cyan(),
             format!(
                 "{:.2}",
                 sys.total_memory() as f64 / 1024.0 / 1024.0 / 1024.0
             )
             .bold()
-            .cyan(),
-            format!("{:.2}", sys.used_memory() as f64 / 1024.0 / 1024.0 / 1024.0)
-                .bold()
-                .cyan()
+            .cyan()
         );
 
         // Move cursor up by the number of lines printed
